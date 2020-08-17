@@ -1,0 +1,23 @@
+.skin-blue .main-header .navbar {
+  background-color: rgb(176,36,40);
+}
+
+.skin-blue .main-header .navbar:hover {
+  background-color: rgb(166,26,30);
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+  background-color: rgb(166,26,30);
+}
+
+.skin-blue .main-header .logo {
+  background-color: rgb(176,36,40);
+}
+
+.skin-blue .main-header .logo:hover {
+  background-color: rgb(166,26,30);
+}
+
+.skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li:hover>a {
+  border-left-color: rgb(176,36,40);
+}

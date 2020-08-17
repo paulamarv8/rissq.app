@@ -1,11 +1,11 @@
 tabItem(
   "documentation",
   fluidRow(
-    box(plotOutput("plot1", height = 250)),
-
-    box(
-      title = "Controls",
-      sliderInput("slider", "Number of observations:", 1, 100, 50)
+    column(
+      width = 12,
+      align="left",
+      h1("Documentation"),
+      p("Supporting documentation for the statistical methods implemented over the RISSQ and intructions for use")
     )
   )
 )

@@ -1,0 +1,13 @@
+name: rissq
+title: rissq
+username:
+account: manuelalfaro
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2674687
+bundleId: 3524703
+url: https://manuelalfaro.shinyapps.io/rissq/
+when: 1597658137.96329
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .Rbuildignore|DESCRIPTION

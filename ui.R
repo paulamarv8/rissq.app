@@ -1,5 +1,8 @@
 ## ui.R ##
 library(shiny)
+library(shinydashboard)
+library(rsconnect)
+
 
 header <- dashboardHeader(
   title = "RISSQ"
@@ -10,15 +13,15 @@ sidebar <- dashboardSidebar(
     id = "dimmenu",
     menuItem("Home", tabName = "home", icon = icon("home")),
 
-    menuItem("Lab", tabName = "lab", icon = icon("money-bill-alt"),
-             menuSubItem("Process Overview", tabName = "process", icon = icon("lightbulb")),
+    menuItem("Lab", tabName = "lab", icon = icon("flask"),
+             menuSubItem("Process Overview", tabName = "process", icon = icon("chalkboard-teacher")),
              menuSubItem("Measure System Analysis", tabName = "process-msa", icon = icon("compass")),
              menuSubItem("Statistical Process Control", tabName = "process-spc", icon = icon("play-circle")),
-             menuSubItem("Aceptance Sampling", tabName = "process-as", icon = icon("compass")),
-             menuSubItem("I/O", tabName = "process-io", icon = icon("compass"))
+             menuSubItem("Aceptance Sampling", tabName = "process-as", icon = icon("creative-commons-sampling")),
+             menuSubItem("I/O", tabName = "process-io", icon = icon("people-arrows"))
     ),
 
-    menuItem("Documentation", tabName = "documentation", icon = icon("money-bill-alt"))
+    menuItem("Documentation", tabName = "documentation", icon = icon("book"))
   )
 )
 

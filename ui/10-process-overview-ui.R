@@ -1,11 +1,11 @@
 tabItem(
   "process",
   fluidRow(
-    box(plotOutput("plot1", height = 250)),
-
-    box(
-      title = "Controls",
-      sliderInput("slider", "Number of observations:", 1, 100, 50)
+    column(
+      width = 12,
+      align="left",
+      h1("Process overview"),
+      p("Information resume and specification for the process/product to be controlled with RISSQ tools")
     )
   )
 )

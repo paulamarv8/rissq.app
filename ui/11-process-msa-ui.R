@@ -1,11 +1,11 @@
 tabItem(
   "process-msa",
   fluidRow(
-    box(plotOutput("plot1", height = 250)),
-
-    box(
-      title = "Controls",
-      sliderInput("slider", "Number of observations:", 1, 100, 50)
+    column(
+      width = 12,
+      align="left",
+      h1("Process measure system analysis"),
+      p("Tools and method to perform an msa analysis")
     )
   )
 )
