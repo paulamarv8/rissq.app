@@ -21,3 +21,7 @@
 .skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li:hover>a {
   border-left-color: rgb(176,36,40);
 }
+
+.skin-blue .content-wrapper, .content {
+  background-color: #FFFFFF;
+}

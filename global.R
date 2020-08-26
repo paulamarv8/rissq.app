@@ -2,9 +2,16 @@
 library(shiny)
 library(shinydashboard)
 library(rsconnect)
+library(rissq)
+library(rissq.io)
+library(rissq.msa)
+library(grid)
+library(gridBase)
+library(gridExtra)
+library(ggplot2)
 # library(tibble, quietly = TRUE)
 # library(dplyr, quietly = TRUE)
-# library(DT, quietly = TRUE)
+library(DT, quietly = TRUE)
 # library(lubridate, quietly = TRUE)
 # library(tidyr, quietly = TRUE)
 # library(shinyWidgets, quietly = TRUE)
@@ -12,3 +19,11 @@ library(rsconnect)
 # library(plotly, quietly = TRUE)
 # library(stringr, quietly = TRUE)
 # library(knitr, quietly = TRUE)
+
+globalProcess = NULL
+globalChracteristic = NULL
+globalProdata = NULL
+globalAnalysis = NULL
+
+globalData = NULL
+globalMetadata = NULL
