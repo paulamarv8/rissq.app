@@ -4,25 +4,46 @@ tabItem("process",
                                   background-color: white;
                                 }')
         )),
-        div(style = "background-color:white;",
-            fluidRow(
-              column(
-                width = 12,
-                align = "left",
-                h1("Process overview"),
-                p(
-                  "Information resume and specification for the process/product to be controlled with RISSQ tools"
-                ),
-                uiOutput('overviewInfoMessage')
-              )
-            ),
-            fluidRow(
-              column(width = 8,
-                     align = "left",
-                     h2(uiOutput(
-                       'overviewProcessTitle'
-                     ))),
-              column(width = 4,
-                     align = "left",
-                     tableOutput('overview'))
-            )))
+        mainPanel(width = 12,
+                  fluidRow(
+                    column(
+                      width = 12,
+                      align = "left",
+                      h1("Process overview"),
+                      p(
+                        "Information resume and specification for the process/product to be controlled with RISSQ tools"
+                      ),
+                      uiOutput('overviewInfoMessage')
+                    )
+                  ),
+                  fluidRow(tabsetPanel(
+                    tabPanel("Process metadata",
+                             div(style = 'padding:2em;',
+                                 fluidRow(
+                                   column(
+                                     style = 'padding=2em;',
+                                     width = 12,
+                                     fluidRow(h3("Name: "),
+                                              textOutput("overviewProcessName")),
+                                     fluidRow(h4("Id: "),
+                                              textOutput("overviewProcessId")),
+                                     fluidRow(
+                                       h4("Description: "),
+                                       textOutput("overviewProcessDescription")
+                                     ),
+                                     fluidRow(
+                                       h3("Characteristics: "),
+                                       DT::DTOutput("overviewProcessCharacteristics")
+                                     )
+                                   )
+                                 ))),
+                    tabPanel("Data",
+                             div(style = "padding:2em;",
+                                 fluidRow(
+                                   column(
+                                     style = 'padding=2em;',
+                                     width = 12,
+                                     DT::DTOutput("overviewData")
+                                   )
+                                 )))
+                  ))))

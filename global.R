@@ -20,10 +20,3 @@ library(DT, quietly = TRUE)
 # library(stringr, quietly = TRUE)
 # library(knitr, quietly = TRUE)
 
-globalProcess = NULL
-globalChracteristic = NULL
-globalProdata = NULL
-globalAnalysis = NULL
-
-globalData = NULL
-globalMetadata = NULL

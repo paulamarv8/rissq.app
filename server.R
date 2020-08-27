@@ -2,6 +2,20 @@ library(shiny)
 library(shinydashboard)
 library(rsconnect)
 
+sharedDataDF <- data.frame()
+sharedProcessDF <- data.frame()
+sharedCharacteristicDF <- data.frame()
+sharedAnalysisDF <- data.frame()
+
+sharedCharacteristicDFT <- data.frame()
+
+sharedMemory <- list()
+
+sharedProcess <- NULL
+sharedCharacteristic <- NULL
+sharedAnalysis <- NULL
+sharedProData <- NULL
+
 function(input, output, session) {
 
   #Home

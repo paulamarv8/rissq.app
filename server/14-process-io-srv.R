@@ -3,7 +3,7 @@ output$ioData <- DT::renderDataTable({
 
   tryCatch(
     {
-      df <- read.csv(input$data$datapath,
+      sharedDataDF <<- read.csv(input$data$datapath,
                      header = input$header,
                      sep = input$sep,
                      quote = input$quote)
@@ -13,15 +13,25 @@ output$ioData <- DT::renderDataTable({
     }
   )
 
-
-
   if(input$disp == "head") {
-    return(head(df))
+    return(head(sharedDataDF))
   }
   else {
-    return(df)
+    return(sharedDataDF)
   }
 
+}, editable = TRUE)
+
+proxy = dataTableProxy('ioData')
+
+observeEvent(input$ioData_cell_edit, {
+  info = input$ioData_cell_edit
+  str(info)
+  i = info$row
+  j = info$col
+  v = info$value
+  sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
+  replaceData(proxy, sharedDataDF, resetPaging = FALSE)  # important
 })
 
 output$ioMetadataProcess <- renderTable({
@@ -31,8 +41,10 @@ output$ioMetadataProcess <- renderTable({
   # having a comma separator causes `read.csv` to error
   tryCatch(
     {
-      dfProcess <- readxl::read_excel(input$metadata$datapath,
+      sharedProcessDF <- readxl::read_excel(input$metadata$datapath,
                                       sheet = "process")
+
+      sharedProcess <<- rissq.io::importProcess(input$metadata$datapath)
     },
     error = function(e) {
       # return a safeError if a parsing error occurs
@@ -42,7 +54,7 @@ output$ioMetadataProcess <- renderTable({
 
   output$ioProcesTitle <- renderUI(HTML("<h3>Process</h3><hr>"))
 
-  return(dfProcess)
+  return(sharedProcessDF)
 })
 
 output$ioMetadataCharacteristic <- renderTable({
@@ -52,8 +64,13 @@ output$ioMetadataCharacteristic <- renderTable({
   # having a comma separator causes `read.csv` to error
   tryCatch(
     {
-      dfCharateristic <- readxl::read_excel(input$metadata$datapath,
+      sharedCharacteristicDF <- readxl::read_excel(input$metadata$datapath,
                                sheet = "characteristic")
+
+      sharedCharacteristic <<- rissq.io::importCharacteristic(input$metadata$datapath)
+
+      sharedCharacteristicDFT <<- t(sharedCharacteristicDF[2])
+      names(sharedCharacteristicDFT) <<- sharedCharacteristicDF[1]
     },
     error = function(e) {
       # return a safeError if a parsing error occurs
@@ -63,7 +80,7 @@ output$ioMetadataCharacteristic <- renderTable({
 
   output$ioCharacteristicTitle <- renderUI(HTML("<h3>Characteristic</h3><hr>"))
 
-  return(dfCharateristic)
+  return(sharedCharacteristicDF)
 })
 
 output$ioMetadataAnalysis <- renderTable({
@@ -73,7 +90,7 @@ output$ioMetadataAnalysis <- renderTable({
   # having a comma separator causes `read.csv` to error
   tryCatch(
     {
-      dfAnalysis <- readxl::read_excel(input$metadata$datapath,
+      sharedAnalysisDF <- readxl::read_excel(input$metadata$datapath,
                                       sheet = "analysis")
     },
     error = function(e) {
@@ -84,5 +101,5 @@ output$ioMetadataAnalysis <- renderTable({
 
   output$ioAnalysisTitle <- renderUI(HTML("<h3>Analysis</h3><hr>"))
 
-  return(dfAnalysis)
+  return(sharedAnalysisDF)
 })

@@ -113,7 +113,7 @@ tabItem("process-io",
 
                                        # Main panel for displaying outputs ----
                                        mainPanel(width = 8,
-                                                 DT::dataTableOutput("ioData"))
+                                                 DT::DTOutput("ioData"))
 
                                      )
                                    )

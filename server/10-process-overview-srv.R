@@ -1,37 +1,66 @@
-output$overview <- renderTable({
+output$overviewData <- DT::renderDataTable({
+  req(input$data)
 
-  # input$file1 will be NULL initially. After the user selects
-  # and uploads a file, head of that data file by default,
-  # or all rows if selected, will be shown.
+  return(sharedDataDF)
 
-  print("yeah")
+}, editable = TRUE)
 
-  req(input$file1)
-  req(input$file2)
+proxyOverviewData = dataTableProxy('overviewData')
 
-  print("yeah2")
+observeEvent(input$overviewData_cell_edit, {
+  info = input$overviewData_cell_edit
+  str(info)
+  i = info$row
+  j = info$col
+  v = info$value
+  sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
+  replaceData(proxyOverviewData, sharedDataDF, resetPaging = FALSE)  # important
+})
 
-  # when reading semicolon separated files,
-  # having a comma separator causes `read.csv` to error
-  tryCatch(
-    {
-      df <- read.csv(input$file1$datapath,
-                     header = input$header,
-                     sep = input$sep,
-                     quote = input$quote)
+output$overviewProcessCharacteristics <- DT::renderDataTable({
+  req(input$metadata)
 
-      metadataChar <- rissq.io::importCharacteristic(metapath = input$file2$datapath)
-    },
-    error = function(e) {
-      # return a safeError if a parsing error occurs
-      stop(safeError(e))
-    }
-  )
+  return(sharedCharacteristicDFT)
+
+}, editable = TRUE)
+
+proxyOverviewCharacteristic = dataTableProxy('overviewProcessCharacteristics')
+
+observeEvent(input$overviewProcessCharacteristics_cell_edit, {
+  info = input$overviewProcessCharacteristics_cell_edit
+  str(info)
+  i = info$row
+  j = info$col
+  v = info$value
+  sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
+  replaceData(proxyOverviewCharacteristic, sharedCharacteristicDFT, resetPaging = FALSE)  # important
+})
+
+output$overviewProcessName <- renderText({
+
+  req(input$metadata)
 
   output$overviewInfoMessage <- renderUI({return("")})
-  output$overviewProcessTitle <- renderUI({return(metadataChar@name)})
 
-  return(df)
+  return(sharedProcess@name)
+})
+
+output$overviewProcessId <- renderText({
+
+  req(input$metadata)
+
+  output$overviewInfoMessage <- renderUI({return("")})
+
+  return(sharedProcess@id)
+})
+
+output$overviewProcessDescription <- renderText({
+
+  req(input$metadata)
+
+  output$overviewInfoMessage <- renderUI({return("")})
+
+  return(sharedProcess@description)
 })
 
 output$overviewInfoMessage <- renderUI({
