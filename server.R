@@ -13,7 +13,7 @@ sharedMemory <- list()
 
 sharedProcess <- NULL
 sharedCharacteristic <- NULL
-sharedAnalysis <- NULL
+sharedMSA <- NULL
 sharedProData <- NULL
 
 function(input, output, session) {

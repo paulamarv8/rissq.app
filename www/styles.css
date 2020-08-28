@@ -25,3 +25,7 @@
 .skin-blue .content-wrapper, .content {
   background-color: #FFFFFF;
 }
+
+#msaId {
+  display: inline-bock;
+}

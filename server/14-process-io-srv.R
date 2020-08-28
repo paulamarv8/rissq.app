@@ -26,12 +26,16 @@ proxy = dataTableProxy('ioData')
 
 observeEvent(input$ioData_cell_edit, {
   info = input$ioData_cell_edit
-  str(info)
-  i = info$row
-  j = info$col
-  v = info$value
-  sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
-  replaceData(proxy, sharedDataDF, resetPaging = FALSE)  # important
+
+  if(info$value != "") {
+    str(info)
+    i = info$row
+    j = info$col
+    v = info$value
+    sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
+    replaceData(proxy, sharedDataDF, resetPaging = FALSE)  # important
+  }
+
 })
 
 output$ioMetadataProcess <- renderTable({
@@ -69,8 +73,9 @@ output$ioMetadataCharacteristic <- renderTable({
 
       sharedCharacteristic <<- rissq.io::importCharacteristic(input$metadata$datapath)
 
-      sharedCharacteristicDFT <<- t(sharedCharacteristicDF[2])
-      names(sharedCharacteristicDFT) <<- sharedCharacteristicDF[1]
+      sharedCharacteristicDFT <<- data.frame(t(sharedCharacteristicDF[2]))
+      names(sharedCharacteristicDFT) <<- sharedCharacteristicDF[[1]]
+      row.names(sharedCharacteristicDFT) <<- NULL
     },
     error = function(e) {
       # return a safeError if a parsing error occurs
@@ -90,7 +95,7 @@ output$ioMetadataAnalysis <- renderTable({
   # having a comma separator causes `read.csv` to error
   tryCatch(
     {
-      sharedAnalysisDF <- readxl::read_excel(input$metadata$datapath,
+      sharedAnalysisDF <<- readxl::read_excel(input$metadata$datapath,
                                       sheet = "analysis")
     },
     error = function(e) {

@@ -9,12 +9,16 @@ proxyOverviewData = dataTableProxy('overviewData')
 
 observeEvent(input$overviewData_cell_edit, {
   info = input$overviewData_cell_edit
-  str(info)
-  i = info$row
-  j = info$col
-  v = info$value
-  sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
-  replaceData(proxyOverviewData, sharedDataDF, resetPaging = FALSE)  # important
+
+  if (info$value != "") {
+    str(info)
+    i = info$row
+    j = info$col
+    v = info$value
+    sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
+    replaceData(proxyOverviewData, sharedDataDF, resetPaging = FALSE)  # important
+  }
+
 })
 
 output$overviewProcessCharacteristics <- DT::renderDataTable({
@@ -28,12 +32,16 @@ proxyOverviewCharacteristic = dataTableProxy('overviewProcessCharacteristics')
 
 observeEvent(input$overviewProcessCharacteristics_cell_edit, {
   info = input$overviewProcessCharacteristics_cell_edit
-  str(info)
-  i = info$row
-  j = info$col
-  v = info$value
-  sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
-  replaceData(proxyOverviewCharacteristic, sharedCharacteristicDFT, resetPaging = FALSE)  # important
+
+  if (info$value != "") {
+    str(info)
+    i = info$row
+    j = info$col
+    v = info$value
+    sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
+    replaceData(proxyOverviewCharacteristic, sharedCharacteristicDFT, resetPaging = FALSE)  # important
+  }
+
 })
 
 output$overviewProcessName <- renderText({
