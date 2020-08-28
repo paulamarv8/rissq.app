@@ -24,6 +24,8 @@ output$ioData <- DT::renderDataTable({
 
 proxy = dataTableProxy('ioData')
 
+
+
 observeEvent(input$ioData_cell_edit, {
   info = input$ioData_cell_edit
 
@@ -33,7 +35,8 @@ observeEvent(input$ioData_cell_edit, {
     j = info$col
     v = info$value
     sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
-    replaceData(proxy, sharedDataDF, resetPaging = FALSE)  # important
+    replaceData(proxy, sharedDataDF, resetPaging = FALSE)
+    replaceData(proxyOverviewData, sharedDataDF, resetPaging = FALSE)
   }
 
 })

@@ -108,7 +108,9 @@ observe({
 })
 
 observeEvent(input$runMSA, {
-  sharedMSA@data@data <<- sharedDataDF
+
+  sharedMSA@data@data[3] <<- sharedDataDF[3]
+
   sharedMSA <<- anovaMSA(sharedMSA)
   sharedMSA <<- rar(sharedMSA)
 

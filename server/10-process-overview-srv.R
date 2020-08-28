@@ -16,7 +16,8 @@ observeEvent(input$overviewData_cell_edit, {
     j = info$col
     v = info$value
     sharedDataDF[i, j] <<- DT::coerceValue(v, sharedDataDF[i, j])
-    replaceData(proxyOverviewData, sharedDataDF, resetPaging = FALSE)  # important
+    replaceData(proxyOverviewData, sharedDataDF, resetPaging = FALSE)
+    replaceData(proxy, sharedDataDF, resetPaging = FALSE)
   }
 
 })
