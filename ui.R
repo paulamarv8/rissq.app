@@ -21,7 +21,10 @@ sidebar <- dashboardSidebar(
              menuSubItem("I/O", tabName = "process-io", icon = icon("people-arrows"))
     ),
 
-    menuItem("Documentation", tabName = "documentation", icon = icon("book"))
+    menuItem("Documentation", tabName = "help", icon = icon("book"),
+             menuSubItem("Project", tabName = "documentation", icon = icon("hands-helping")),
+             menuSubItem("Test files", tabName = "documentation-test", icon = icon("file-alt"))
+    )
   )
 )
 
@@ -46,7 +49,9 @@ body <- dashboardBody(
     source("ui/13-process-as-ui.R", local = TRUE)$value,
     source("ui/14-process-io-ui.R", local = TRUE)$value,
 
-    source("ui/20-documentation-ui.R", local = TRUE)$value
+    source("ui/20-documentation-ui.R", local = TRUE)$value,
+    source("ui/21-documentation-test-ui.R", local = TRUE)$value
+
   )
 )
 

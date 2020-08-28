@@ -28,4 +28,5 @@ function(input, output, session) {
   source("server/14-process-io-srv.R", local = TRUE)
 
   source("server/20-documentation-srv.R", local = TRUE)
+  source("server/21-documentation-test-srv.R", local = TRUE)
 }
