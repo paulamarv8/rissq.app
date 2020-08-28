@@ -24,8 +24,6 @@ output$ioData <- DT::renderDataTable({
 
 proxy = dataTableProxy('ioData')
 
-
-
 observeEvent(input$ioData_cell_edit, {
   info = input$ioData_cell_edit
 

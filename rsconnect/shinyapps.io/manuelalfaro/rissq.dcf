@@ -5,9 +5,9 @@ account: manuelalfaro
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2674687
-bundleId: 3568128
+bundleId: 3568220
 url: https://manuelalfaro.shinyapps.io/rissq/
-when: 1598640353.86104
+when: 1598642665.03997
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: .Rbuildignore|DESCRIPTION|NAMESPACE
