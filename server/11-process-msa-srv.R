@@ -14,10 +14,7 @@ output$msaName <- renderText({
 })
 
 output$msaId <- renderUI({
-  req(input$metadata)
-  req(input$data)
-
-  return(HTML(sharedMSA@id))
+  return(HTML("<h4>ID: </h4>"))
 })
 
 output$msaDescription <- renderText({
@@ -91,6 +88,7 @@ observe({
   req(input$metadata)
   req(input$data)
 
+  id <- sharedAnalysisDF[[1,2]]
   tolerance <- sharedAnalysisDF[[4,2]]
   sigma <- sharedAnalysisDF[[5,2]]
   alphaLim <- sharedAnalysisDF[[6,2]]
@@ -103,9 +101,17 @@ observe({
   updateTextInput(session, "inputAlphaLim", value = alphaLim)
   updateTextInput(session, "inputDigits", value = digits)
   updateTextInput(session, "inputMethod", value = method)
+
+  output$msaId <- renderUI({
+    return(HTML(paste("<h4>ID: ",id, "</h4>")))
+  })
 })
 
 observeEvent(input$runMSA, {
+  sharedMSA@data@data <<- sharedDataDF
+  sharedMSA <<- anovaMSA(sharedMSA)
+  sharedMSA <<- rar(sharedMSA)
+
   output$summaryRAR <- renderPrint({
     summary(sharedMSA)
   })
