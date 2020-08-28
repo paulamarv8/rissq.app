@@ -106,11 +106,50 @@ observe({
 })
 
 observeEvent(input$runMSA, {
-  output$showRAR <- renderPrint({
+  output$summaryRAR <- renderPrint({
     summary(sharedMSA)
+  })
+
+  output$showRAR <- renderPrint({
+    show(sharedMSA)
   })
 
   output$plotRAR <- renderPlot({
     return(rissq.msa::plotRar(sharedMSA))
   })
 })
+
+
+output$reportMSA <- downloadHandler(
+
+  filename = function() {
+    paste('reportMSA', sep = '.', switch(
+      input$format,
+      PDF = 'pdf',
+      HTML = 'html'
+    ))
+  },
+
+  content = function(file) {
+
+    tempReport <- tempfile(fileext = ".Rmd")
+
+    template <- switch(
+      input$format,
+      PDF = 'www/reports/pdfReportMSA.Rmd',
+      HTML = 'www/reports/htmlReportMSA.Rmd'
+    )
+
+    file.copy(template, tempReport, overwrite = TRUE)
+
+    # Set up parameters to pass to Rmd document
+    params <- list(analysis = sharedMSA)
+
+    rmarkdown::render(tempReport,
+                      output_file = file,
+                      params = params,
+                      envir = new.env(parent = globalenv()))
+
+  }
+
+)

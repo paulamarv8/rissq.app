@@ -1,0 +1,87 @@
+---
+title: "reportMSA"
+output: pdf_document
+params:
+  analysis: NA
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rissq)
+library(rissq.msa)
+library(gridExtra)
+library(ggplot2)
+```
+
+## Measurement System Analysis summary
+
+```{r, echo=FALSE}
+summary(params$analysis)
+```
+
+## Including Plots
+
+### Resume chart
+
+```{r, echo=FALSE, fig.show='hide'}
+p <- plotRar(params$analysis)
+```
+
+```{r, echo=FALSE}
+p
+```
+
+### Components of Variance chhart
+
+```{r, echo=FALSE}
+ggplotComponentOfVariationChart(params$analysis)
+```
+
+### Variable by Appraiser chart
+
+```{r, echo=FALSE}
+ggplotVariableByAppraiserChart(params$analysis)
+```
+
+### Variable by Part chart
+
+```{r, echo=FALSE}
+ggplotVariableByPartChart(params$analysis)
+```
+
+### Interaction chart
+
+```{r, echo=FALSE}
+tryCatch(
+    {
+      ggplotInteractionChart(params$analysis)
+    },
+    error = function(e) {
+      message("Only for Crossed method")
+    }
+)
+```
+
+### Mean chart
+
+```{r, echo=FALSE}
+ggplotMeanChart(params$analysis)
+```
+
+### Range chart
+
+```{r, echo=FALSE}
+ggplotRangeChart(params$analysis)
+```
+
+
+## Console output
+
+In case you want to test all values of the computatios, all slots are printed here.
+
+```{r, echo=FALSE}
+show(params$analysis)
+```
+
+
+###### Made with RISSQ APP
