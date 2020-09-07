@@ -15,7 +15,7 @@ sidebar <- dashboardSidebar(
 
     menuItem("Lab", tabName = "lab", icon = icon("flask"),
              menuSubItem("Process Overview", tabName = "process", icon = icon("chalkboard-teacher")),
-             menuSubItem("Measure System Analysis", tabName = "process-msa", icon = icon("compass")),
+             menuSubItem("Measurement Systems Analysis", tabName = "process-msa", icon = icon("compass")),
              menuSubItem("Statistical Process Control", tabName = "process-spc", icon = icon("play-circle")),
              menuSubItem("Aceptance Sampling", tabName = "process-as", icon = icon("creative-commons-sampling")),
              menuSubItem("I/O", tabName = "process-io", icon = icon("people-arrows"))

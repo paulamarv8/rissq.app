@@ -17,8 +17,8 @@ tabItem(
             fluidRow(column(
               width = 12,
               align = "left",
-              h1("Process measure system analysis"),
-              p("Tools and method to perform an msa analysis")
+              h1("Process measurement systems analysis"),
+              p("Tools and method to perform an MSA analysis")
             )),
             tabsetPanel(
               tabPanel("Analysis",
