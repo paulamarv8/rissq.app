@@ -1,0 +1,58 @@
+{
+  "input": {
+    "data": null,
+    "dimmenu": "process-io",
+    "disp": "head",
+    "format": "PDF",
+    "header": true,
+    "inputAlphaLim": "",
+    "inputDigits": "",
+    "inputMethod": "",
+    "inputSigma": "",
+    "inputTolerance": "",
+    "metadata": null,
+    "quote": "\"",
+    "runMSA": 0,
+    "selectFiles": null,
+    "sep": ",",
+    "sidebarCollapsed": false,
+    "sidebarItemExpanded": "Lab",
+    "tabSet": "Process metadata",
+    "tabSetIO": "Data",
+    "tabSetMSA": "Analysis"
+  },
+  "output": {
+    "ioData": [
+      "",
+      "NULL",
+      "c(\"shiny.silent.error\", \"validation\")"
+    ],
+    "ioMetadataAnalysis": {
+      "message": "",
+      "call": "NULL",
+      "type": [
+        "shiny.silent.error",
+        "validation"
+      ]
+    },
+    "ioMetadataCharacteristic": {
+      "message": "",
+      "call": "NULL",
+      "type": [
+        "shiny.silent.error",
+        "validation"
+      ]
+    },
+    "ioMetadataProcess": {
+      "message": "",
+      "call": "NULL",
+      "type": [
+        "shiny.silent.error",
+        "validation"
+      ]
+    }
+  },
+  "export": {
+
+  }
+}
