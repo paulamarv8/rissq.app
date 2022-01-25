@@ -1,0 +1,69 @@
+{
+  "input": {
+    "data": null,
+    "dimmenu": "process",
+    "disp": "head",
+    "format": "PDF",
+    "header": true,
+    "inputAlphaLim": "",
+    "inputDigits": "",
+    "inputMethod": "",
+    "inputSigma": "",
+    "inputTolerance": "",
+    "metadata": null,
+    "quote": "\"",
+    "runMSA": 0,
+    "selectFiles": null,
+    "sep": ",",
+    "sidebarCollapsed": false,
+    "sidebarItemExpanded": "Lab",
+    "tabSetIO": "Process metadata",
+    "tabSetMSA": "Analysis",
+    "tabSetOverview": "Data"
+  },
+  "output": {
+    "overviewData": [
+      "",
+      "NULL",
+      "c(\"shiny.silent.error\", \"validation\")"
+    ],
+    "overviewInfoMessage": {
+      "html": "\n              <div style='margin-top:3em;margin-bottom:3em;margin-left:3em;color:#B02428;'>\n                <i class='fa fa-exclamation-triangle'><\/i> Please load the metadata of the process and the datafiles on the I/O tab. Test files in documentation.\n              <\/div>\n              ",
+      "deps": [
+
+      ]
+    },
+    "overviewProcessCharacteristics": [
+      "",
+      "NULL",
+      "c(\"shiny.silent.error\", \"validation\")"
+    ],
+    "overviewProcessDescription": {
+      "message": "",
+      "call": "NULL",
+      "type": [
+        "shiny.silent.error",
+        "validation"
+      ]
+    },
+    "overviewProcessId": {
+      "message": "",
+      "call": "NULL",
+      "type": [
+        "shiny.silent.error",
+        "validation"
+      ]
+    },
+    "overviewProcessName": {
+      "message": "",
+      "call": "NULL",
+      "type": [
+        "shiny.silent.error",
+        "validation"
+      ]
+    }
+  },
+  "export": {
+
+  }
+}
