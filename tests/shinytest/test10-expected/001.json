@@ -1,0 +1,27 @@
+{
+  "input": {
+    "data": null,
+    "dimmenu": "documentation-test",
+    "disp": "head",
+    "format": "PDF",
+    "header": true,
+    "inputAlphaLim": "",
+    "inputDigits": "",
+    "inputMethod": "",
+    "inputSigma": "",
+    "inputTolerance": "",
+    "metadata": null,
+    "quote": "\"",
+    "runMSA": 0,
+    "selectFiles": null,
+    "sep": ",",
+    "sidebarCollapsed": false,
+    "sidebarItemExpanded": "Documentation"
+  },
+  "output": {
+
+  },
+  "export": {
+
+  }
+}
