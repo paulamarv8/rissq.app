@@ -45,5 +45,6 @@ tabItem("process",
                                      width = 12,
                                      DT::DTOutput("overviewData")
                                    )
-                                 )))
+                                 ))),
+                    id="tabSetOverview"
                   ))))
