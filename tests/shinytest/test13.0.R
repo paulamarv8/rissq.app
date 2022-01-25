@@ -1,0 +1,10 @@
+app <- ShinyDriver$new("../../", seed=1)
+app$snapshotInit("test13.0")
+
+app$setInputs(sidebarItemExpanded = "Lab")
+app$setInputs(dimmenu = "process-io")
+app$uploadFile(metadata = "metadataBaseExample.xlsx")
+app$setInputs(tabSetIO = "Data")
+app$uploadFile(data = "base.csv")
+app$setInputs(dimmenu = "process")
+app$snapshot()

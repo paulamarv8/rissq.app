@@ -1,0 +1,486 @@
+{
+  "input": {
+    "data": {
+      "name": [
+        "base.csv"
+      ],
+      "size": [
+        443
+      ],
+      "type": [
+        "text/csv"
+      ],
+      "datapath": [
+        "0.csv"
+      ]
+    },
+    "dimmenu": "process",
+    "disp": "head",
+    "format": "PDF",
+    "header": true,
+    "inputAlphaLim": "",
+    "inputDigits": "3",
+    "inputMethod": "base",
+    "inputSigma": "",
+    "inputTolerance": "10",
+    "ioData_cell_clicked": {
+
+    },
+    "ioData_cells_selected": [
+
+    ],
+    "ioData_columns_selected": null,
+    "ioData_rows_all": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ioData_rows_current": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ioData_rows_selected": null,
+    "ioData_search": "",
+    "ioData_state": {
+      "time": 1643048677228,
+      "start": 0,
+      "length": 10,
+      "order": [
+
+      ],
+      "search": {
+        "search": "",
+        "smart": true,
+        "regex": false,
+        "caseInsensitive": true
+      },
+      "columns": [
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        }
+      ]
+    },
+    "metadata": {
+      "name": [
+        "metadataBaseExample.xlsx"
+      ],
+      "size": [
+        10656
+      ],
+      "type": [
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      ],
+      "datapath": [
+        "0.xlsx"
+      ]
+    },
+    "overviewProcessCharacteristics_cell_clicked": {
+
+    },
+    "overviewProcessCharacteristics_cells_selected": [
+
+    ],
+    "overviewProcessCharacteristics_columns_selected": null,
+    "overviewProcessCharacteristics_rows_all": 1,
+    "overviewProcessCharacteristics_rows_current": 1,
+    "overviewProcessCharacteristics_rows_selected": null,
+    "overviewProcessCharacteristics_search": "",
+    "overviewProcessCharacteristics_state": {
+      "time": 1643048678035,
+      "start": 0,
+      "length": 10,
+      "order": [
+
+      ],
+      "search": {
+        "search": "",
+        "smart": true,
+        "regex": false,
+        "caseInsensitive": true
+      },
+      "columns": [
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        },
+        {
+          "visible": true,
+          "search": {
+            "search": "",
+            "smart": true,
+            "regex": false,
+            "caseInsensitive": true
+          }
+        }
+      ]
+    },
+    "quote": "\"",
+    "runMSA": 0,
+    "selectFiles": null,
+    "sep": ",",
+    "sidebarCollapsed": false,
+    "sidebarItemExpanded": "Lab",
+    "tabSetIO": "Data",
+    "tabSetMSA": "Analysis",
+    "tabSetOverview": "Process metadata"
+  },
+  "output": {
+    "ioAnalysisTitle": {
+      "html": "<h3>Analysis<\/h3><hr>",
+      "deps": [
+
+      ]
+    },
+    "ioCharacteristicTitle": {
+      "html": "<h3>Characteristic<\/h3><hr>",
+      "deps": [
+
+      ]
+    },
+    "ioData": {
+      "x": {
+        "filter": "none",
+        "vertical": false,
+        "editable": {
+          "target": "cell",
+          "disable": {
+            "columns": null
+          },
+          "numeric": [
+            1,
+            3
+          ],
+          "area": [
+
+          ]
+        },
+        "container": "<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Pieza<\/th>\n      <th>Operador<\/th>\n      <th>Respuesta<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>",
+        "options": {
+          "columnDefs": [
+            {
+              "className": "dt-right",
+              "targets": [
+                1,
+                3
+              ]
+            },
+            {
+              "orderable": false,
+              "targets": 0
+            }
+          ],
+          "order": [
+
+          ],
+          "autoWidth": false,
+          "orderClasses": false,
+          "ajax": {
+            "type": "POST",
+            "data": "function(d) {\nd.search.caseInsensitive = true;\nd.search.smart = true;\nd.escape = true;\nvar encodeAmp = function(x) { x.value = x.value.replace(/&/g, \"%26\"); }\nencodeAmp(d.search);\n$.each(d.columns, function(i, v) {encodeAmp(v.search);});\n}"
+          },
+          "serverSide": true,
+          "processing": true
+        },
+        "selection": {
+          "mode": "multiple",
+          "selected": null,
+          "target": "row",
+          "selectable": null
+        }
+      },
+      "evals": [
+        "options.ajax.data"
+      ],
+      "jsHooks": [
+
+      ],
+      "deps": [
+        {
+          "name": "jquery",
+          "version": "3.6.0",
+          "src": {
+            "href": "jquery-3.6.0"
+          },
+          "meta": null,
+          "script": "jquery-3.6.0.min.js",
+          "stylesheet": null,
+          "head": null,
+          "attachment": null,
+          "all_files": true
+        },
+        {
+          "name": "dt-core",
+          "version": "1.11.3",
+          "src": {
+            "href": "dt-core-1.11.3"
+          },
+          "meta": null,
+          "script": "js/jquery.dataTables.min.js",
+          "stylesheet": [
+            "css/jquery.dataTables.min.css",
+            "css/jquery.dataTables.extra.css"
+          ],
+          "head": null,
+          "attachment": null,
+          "package": null,
+          "all_files": false
+        },
+        {
+          "name": "crosstalk",
+          "version": "1.2.0",
+          "src": {
+            "href": "crosstalk-1.2.0"
+          },
+          "meta": null,
+          "script": "js/crosstalk.min.js",
+          "stylesheet": "css/crosstalk.min.css",
+          "head": null,
+          "attachment": null,
+          "all_files": true
+        }
+      ]
+    },
+    "ioMetadataAnalysis": "<table  class = 'table shiny-table table- spacing-s' style = 'width:auto;'>\n<thead> <tr> <th style='text-align: left;'> slot <\/th> <th style='text-align: left;'> value <\/th>  <\/tr> <\/thead> <tbody>\n  <tr> <td> id <\/td> <td> A1 <\/td> <\/tr>\n  <tr> <td> name <\/td> <td> Fox23 BS Range <\/td> <\/tr>\n  <tr> <td> description <\/td> <td> Range test for back suspension of FOX23 model <\/td> <\/tr>\n  <tr> <td> tolerance <\/td> <td> 10 <\/td> <\/tr>\n  <tr> <td> sigma <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> alphaLim <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> digits <\/td> <td> 3 <\/td> <\/tr>\n  <tr> <td> method <\/td> <td> base <\/td> <\/tr>\n   <\/tbody> <\/table>",
+    "ioMetadataCharacteristic": "<table  class = 'table shiny-table table- spacing-s' style = 'width:auto;'>\n<thead> <tr> <th style='text-align: left;'> slot <\/th> <th style='text-align: left;'> value <\/th>  <\/tr> <\/thead> <tbody>\n  <tr> <td> id <\/td> <td> x.20 <\/td> <\/tr>\n  <tr> <td> name <\/td> <td> Suspension range <\/td> <\/tr>\n  <tr> <td> description <\/td> <td> Suspension range under 100N force <\/td> <\/tr>\n  <tr> <td> kvalue <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> T <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> U <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> L <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> pnc <\/td> <td> 0.65 <\/td> <\/tr>\n  <tr> <td> digits <\/td> <td> 3 <\/td> <\/tr>\n  <tr> <td> units <\/td> <td> cm <\/td> <\/tr>\n   <\/tbody> <\/table>",
+    "ioMetadataProcess": "<table  class = 'table shiny-table table- spacing-s' style = 'width:auto;'>\n<thead> <tr> <th style='text-align: left;'> slot <\/th> <th style='text-align: left;'> value <\/th>  <\/tr> <\/thead> <tbody>\n  <tr> <td> id <\/td> <td> P.23 <\/td> <\/tr>\n  <tr> <td> name <\/td> <td> Fox 23 Back Suspension <\/td> <\/tr>\n  <tr> <td> description <\/td> <td> Fox 23 Back Suspension assembly <\/td> <\/tr>\n   <\/tbody> <\/table>",
+    "ioProcesTitle": {
+      "html": "<h3>Process<\/h3><hr>",
+      "deps": [
+
+      ]
+    },
+    "overviewInfoMessage": {
+      "html": "",
+      "deps": [
+
+      ]
+    },
+    "overviewProcessCharacteristics": {
+      "x": {
+        "filter": "none",
+        "vertical": false,
+        "editable": {
+          "target": "cell",
+          "disable": {
+            "columns": null
+          },
+          "numeric": [
+
+          ],
+          "area": [
+
+          ]
+        },
+        "container": "<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>id<\/th>\n      <th>name<\/th>\n      <th>description<\/th>\n      <th>kvalue<\/th>\n      <th>T<\/th>\n      <th>U<\/th>\n      <th>L<\/th>\n      <th>pnc<\/th>\n      <th>digits<\/th>\n      <th>units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>",
+        "options": {
+          "order": [
+
+          ],
+          "autoWidth": false,
+          "orderClasses": false,
+          "columnDefs": [
+            {
+              "orderable": false,
+              "targets": 0
+            }
+          ],
+          "ajax": {
+            "type": "POST",
+            "data": "function(d) {\nd.search.caseInsensitive = true;\nd.search.smart = true;\nd.escape = true;\nvar encodeAmp = function(x) { x.value = x.value.replace(/&/g, \"%26\"); }\nencodeAmp(d.search);\n$.each(d.columns, function(i, v) {encodeAmp(v.search);});\n}"
+          },
+          "serverSide": true,
+          "processing": true
+        },
+        "selection": {
+          "mode": "multiple",
+          "selected": null,
+          "target": "row",
+          "selectable": null
+        }
+      },
+      "evals": [
+        "options.ajax.data"
+      ],
+      "jsHooks": [
+
+      ],
+      "deps": [
+        {
+          "name": "jquery",
+          "version": "3.6.0",
+          "src": {
+            "href": "jquery-3.6.0"
+          },
+          "meta": null,
+          "script": "jquery-3.6.0.min.js",
+          "stylesheet": null,
+          "head": null,
+          "attachment": null,
+          "all_files": true
+        },
+        {
+          "name": "dt-core",
+          "version": "1.11.3",
+          "src": {
+            "href": "dt-core-1.11.3"
+          },
+          "meta": null,
+          "script": "js/jquery.dataTables.min.js",
+          "stylesheet": [
+            "css/jquery.dataTables.min.css",
+            "css/jquery.dataTables.extra.css"
+          ],
+          "head": null,
+          "attachment": null,
+          "package": null,
+          "all_files": false
+        },
+        {
+          "name": "crosstalk",
+          "version": "1.2.0",
+          "src": {
+            "href": "crosstalk-1.2.0"
+          },
+          "meta": null,
+          "script": "js/crosstalk.min.js",
+          "stylesheet": "css/crosstalk.min.css",
+          "head": null,
+          "attachment": null,
+          "all_files": true
+        }
+      ]
+    },
+    "overviewProcessDescription": "Fox 23 Back Suspension assembly",
+    "overviewProcessId": "P.23",
+    "overviewProcessName": "Fox 23 Back Suspension"
+  },
+  "export": {
+
+  }
+}
