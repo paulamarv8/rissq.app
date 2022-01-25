@@ -74,6 +74,6 @@ tabItem(
                              column(width = 12,
                                     align = "left",
                                     plotOutput("plotRAR", height = "800px"))
-                           )))
-            ))
+                           ))),
+            id="tabSetMSA"))
 )
