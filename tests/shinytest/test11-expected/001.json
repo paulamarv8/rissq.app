@@ -1,0 +1,60 @@
+{
+  "input": {
+    "data": null,
+    "dimmenu": "process-io",
+    "disp": "head",
+    "format": "PDF",
+    "header": true,
+    "inputAlphaLim": "",
+    "inputDigits": "",
+    "inputMethod": "",
+    "inputSigma": "",
+    "inputTolerance": "",
+    "metadata": {
+      "name": [
+        "metadataBaseExample.xlsx"
+      ],
+      "size": [
+        10656
+      ],
+      "type": [
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      ],
+      "datapath": [
+        "0.xlsx"
+      ]
+    },
+    "quote": "\"",
+    "runMSA": 0,
+    "selectFiles": null,
+    "sep": ",",
+    "sidebarCollapsed": false,
+    "sidebarItemExpanded": "Lab"
+  },
+  "output": {
+    "ioAnalysisTitle": {
+      "html": "<h3>Analysis<\/h3><hr>",
+      "deps": [
+
+      ]
+    },
+    "ioCharacteristicTitle": {
+      "html": "<h3>Characteristic<\/h3><hr>",
+      "deps": [
+
+      ]
+    },
+    "ioMetadataAnalysis": "<table  class = 'table shiny-table table- spacing-s' style = 'width:auto;'>\n<thead> <tr> <th style='text-align: left;'> slot <\/th> <th style='text-align: left;'> value <\/th>  <\/tr> <\/thead> <tbody>\n  <tr> <td> id <\/td> <td> A1 <\/td> <\/tr>\n  <tr> <td> name <\/td> <td> Fox23 BS Range <\/td> <\/tr>\n  <tr> <td> description <\/td> <td> Range test for back suspension of FOX23 model <\/td> <\/tr>\n  <tr> <td> tolerance <\/td> <td> 10 <\/td> <\/tr>\n  <tr> <td> sigma <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> alphaLim <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> digits <\/td> <td> 3 <\/td> <\/tr>\n  <tr> <td> method <\/td> <td> base <\/td> <\/tr>\n   <\/tbody> <\/table>",
+    "ioMetadataCharacteristic": "<table  class = 'table shiny-table table- spacing-s' style = 'width:auto;'>\n<thead> <tr> <th style='text-align: left;'> slot <\/th> <th style='text-align: left;'> value <\/th>  <\/tr> <\/thead> <tbody>\n  <tr> <td> id <\/td> <td> x.20 <\/td> <\/tr>\n  <tr> <td> name <\/td> <td> Suspension range <\/td> <\/tr>\n  <tr> <td> description <\/td> <td> Suspension range under 100N force <\/td> <\/tr>\n  <tr> <td> kvalue <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> T <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> U <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> L <\/td> <td class='NA'> NA <\/td> <\/tr>\n  <tr> <td> pnc <\/td> <td> 0.65 <\/td> <\/tr>\n  <tr> <td> digits <\/td> <td> 3 <\/td> <\/tr>\n  <tr> <td> units <\/td> <td> cm <\/td> <\/tr>\n   <\/tbody> <\/table>",
+    "ioMetadataProcess": "<table  class = 'table shiny-table table- spacing-s' style = 'width:auto;'>\n<thead> <tr> <th style='text-align: left;'> slot <\/th> <th style='text-align: left;'> value <\/th>  <\/tr> <\/thead> <tbody>\n  <tr> <td> id <\/td> <td> P.23 <\/td> <\/tr>\n  <tr> <td> name <\/td> <td> Fox 23 Back Suspension <\/td> <\/tr>\n  <tr> <td> description <\/td> <td> Fox 23 Back Suspension assembly <\/td> <\/tr>\n   <\/tbody> <\/table>",
+    "ioProcesTitle": {
+      "html": "<h3>Process<\/h3><hr>",
+      "deps": [
+
+      ]
+    }
+  },
+  "export": {
+
+  }
+}
