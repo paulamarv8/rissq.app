@@ -16,7 +16,10 @@
     "selectFiles": null,
     "sep": ",",
     "sidebarCollapsed": false,
-    "sidebarItemExpanded": "Lab"
+    "sidebarItemExpanded": "Lab",
+    "tabSetIO": "Process metadata",
+    "tabSetMSA": "Analysis",
+    "tabSetOverview": "Process metadata"
   },
   "output": {
 

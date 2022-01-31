@@ -49,7 +49,7 @@
     "ioData_rows_selected": null,
     "ioData_search": "",
     "ioData_state": {
-      "time": 1640285277847,
+      "time": 1643652931871,
       "start": 0,
       "length": 10,
       "order": [
@@ -107,9 +107,9 @@
     "sep": ",",
     "sidebarCollapsed": false,
     "sidebarItemExpanded": "Lab",
-    "tabSet": "Process metadata",
     "tabSetIO": "Data",
-    "tabSetMSA": "Analysis"
+    "tabSetMSA": "Analysis",
+    "tabSetOverview": "Process metadata"
   },
   "output": {
     "ioData": {

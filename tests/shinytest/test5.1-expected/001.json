@@ -17,8 +17,9 @@
     "sep": ",",
     "sidebarCollapsed": false,
     "sidebarItemExpanded": "Lab",
-    "tabSet": "Process metadata",
-    "tabSetMSA": "Graph"
+    "tabSetIO": "Process metadata",
+    "tabSetMSA": "Graph",
+    "tabSetOverview": "Process metadata"
   },
   "output": {
     "msaAlphaLim": {

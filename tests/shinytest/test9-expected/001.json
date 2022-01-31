@@ -16,7 +16,10 @@
     "selectFiles": null,
     "sep": ",",
     "sidebarCollapsed": false,
-    "sidebarItemExpanded": "Documentation"
+    "sidebarItemExpanded": "Documentation",
+    "tabSetIO": "Process metadata",
+    "tabSetMSA": "Analysis",
+    "tabSetOverview": "Process metadata"
   },
   "output": {
 

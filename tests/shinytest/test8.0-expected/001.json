@@ -17,9 +17,9 @@
     "sep": ",",
     "sidebarCollapsed": false,
     "sidebarItemExpanded": "Lab",
-    "tabSet": "Process metadata",
     "tabSetIO": "Process metadata",
-    "tabSetMSA": "Analysis"
+    "tabSetMSA": "Analysis",
+    "tabSetOverview": "Process metadata"
   },
   "output": {
     "ioMetadataAnalysis": {
